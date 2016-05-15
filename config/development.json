@@ -1,0 +1,8 @@
+{
+  "DB_USER" : "root",
+  "DB_PASSWORD" : "password",
+  "DB_PORT" : 3306,
+  "DB_DILECT" : "mysql",
+  "DB_DATABASE" : "erpsystem",
+  "HAVEN_ON_DEMAND_API_KEY" : ""
+}
