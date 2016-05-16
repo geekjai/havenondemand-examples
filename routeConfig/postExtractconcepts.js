@@ -7,7 +7,7 @@ module.exports = {
     handler: function(request, reply){
       serviceHandler.handler(request, reply);
     },
-    description: 'Adding a new product item',
+    description: 'HPE API Service',
     notes: 'The Concept Extraction API uses statistical methods to extract key concepts from text.',
     tags: ['api'],
     validate: {

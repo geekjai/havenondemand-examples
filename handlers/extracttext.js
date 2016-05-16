@@ -4,9 +4,9 @@ const Promise = require('bluebird');
 
 var client = new havenondemand.HODClient(config('HAVEN_ON_DEMAND_API_KEY'));
 
-var extractconcepts = function(data){
+var extracttext = function(data){
   return new Promise(function(resolve, reject){
-    client.call('extractconcepts', data, function(err,resp,body){
+    client.call('extracttext', data, function(err,resp,body){
       if(err){
         reject(err);
         return;
@@ -17,7 +17,10 @@ var extractconcepts = function(data){
 }
 
 var handler = function(request, reply){
-  extractconcepts(request.payload).then(reply).catch(reply);
+  var file = {
+    file : (request.payload['file'].hapi).filename
+  }
+  extracttext(file).then(reply).catch(reply);
 }
 
 module.exports.handler = handler;

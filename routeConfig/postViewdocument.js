@@ -1,14 +1,14 @@
 'use strict';
 
 const Joi = require('joi');
-const serviceHandler = require('../handlers/ocrdocument');
+const serviceHandler = require('../handlers/viewdocument');
 
 module.exports = {
     handler: function(request, reply){
       serviceHandler.handler(request, reply);
     },
     description: 'HPE API Service',
-    notes: 'The OCR Document API extracts text from an image that you provide.',
+    notes: 'The View Document API renders documents into HTML, and highlights text in the document.',
     tags: ['api'],
     payload: {
       output: 'stream',

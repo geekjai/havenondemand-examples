@@ -7,7 +7,7 @@ module.exports = {
     handler: function(request, reply){
       serviceHandler.handler(request, reply);
     },
-    description: 'Adding a new product item',
+    description: 'HPE API Service',
     notes: 'This api will be used by admin or product manager to add new product.',
     tags: ['api'],
     validate: {

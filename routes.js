@@ -19,5 +19,15 @@ module.exports = [
     method: 'POST',
     path: '/formatconversion/ocrdocument',
     config: require('./routeConfig/postOcrdocument')
+  },
+  {
+    method: 'POST',
+    path: '/formatconversion/extracttext',
+    config: require('./routeConfig/postExtracttext')
+  },
+  {
+    method: 'POST',
+    path: '/formatconversion/viewdocument',
+    config: require('./routeConfig/postViewdocument')
   }
 ]
