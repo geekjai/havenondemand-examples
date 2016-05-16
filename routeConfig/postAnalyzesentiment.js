@@ -9,7 +9,7 @@ module.exports = {
     },
     description: 'Adding a new product item',
     notes: 'This api will be used by admin or product manager to add new product.',
-    tags: ['api','product','category'],
+    tags: ['api'],
     validate: {
         payload: {
             text: Joi.string()
