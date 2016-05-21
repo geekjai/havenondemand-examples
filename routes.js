@@ -61,5 +61,10 @@ module.exports = [
     method: 'POST',
     path: '/graphanalysis/getSubGraph',
     config: require('./routeConfig/graph_analysis/getsubgraph')
+  },
+  {
+    method: 'POST',
+    path: '/graphanalysis/suggestlinks',
+    config: require('./routeConfig/graph_analysis/suggestlinks')
   }
 ]
