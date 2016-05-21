@@ -46,5 +46,20 @@ module.exports = [
     method: 'POST',
     path: '/graphanalysis/getCommonNeighbors',
     config: require('./routeConfig/graph_analysis/getCommonneighbors')
+  },
+  {
+    method: 'POST',
+    path: '/graphanalysis/getNodes',
+    config: require('./routeConfig/graph_analysis/getnodes')
+  },
+  {
+    method: 'POST',
+    path: '/graphanalysis/getShortestPath',
+    config: require('./routeConfig/graph_analysis/getshortestpath')
+  },
+  {
+    method: 'POST',
+    path: '/graphanalysis/getSubGraph',
+    config: require('./routeConfig/graph_analysis/getsubgraph')
   }
 ]
