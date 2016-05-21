@@ -29,5 +29,22 @@ module.exports = [
     method: 'POST',
     path: '/formatconversion/viewdocument',
     config: require('./routeConfig/postViewdocument')
+  },
+  //connectors
+  {
+    method: 'POST',
+    path: '/connectors/createconnector',
+    config: require('./routeConfig/connectors/postCreateconnector')
+  },
+  //graph analysis
+  {
+    method: 'POST',
+    path: '/graphanalysis/getNeighbors',
+    config: require('./routeConfig/graph_analysis/getNeighbors')
+  },
+  {
+    method: 'POST',
+    path: '/graphanalysis/getCommonNeighbors',
+    config: require('./routeConfig/graph_analysis/getCommonneighbors')
   }
 ]
